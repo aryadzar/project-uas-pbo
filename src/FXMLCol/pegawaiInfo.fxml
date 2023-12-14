@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.SubScene?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="Controller.PegawaiInfoController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="Home" prefHeight="588.0" prefWidth="780.0">
+         <children>
+            <ImageView fitHeight="588.0" fitWidth="790.0" layoutX="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/Room.jpg" />
+               </image>
+            </ImageView>
+            <SubScene height="72.0" layoutX="666.0" layoutY="508.0" opacity="0.45" width="107.0">
+               <root>
+                  <Region />
+               </root>
+               <effect>
+                  <BoxBlur />
+               </effect>
+            </SubScene>
+            <ImageView fitHeight="78.0" fitWidth="88.0" layoutX="676.0" layoutY="508.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/Hospitality%20Logo.png" />
+               </image>
+               <effect>
+                  <Bloom />
+               </effect>
+            </ImageView>
+            <SubScene height="271.0" layoutX="86.0" layoutY="176.0" opacity="0.72" width="649.0">
+              <root>
+                <Region />
+              </root>
+            </SubScene>
+            <ImageView fitHeight="39.0" fitWidth="99.0" layoutX="689.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/Login.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="108.0" layoutY="184.0" prefHeight="22.0" prefWidth="88.0" text="ID :">
+               <font>
+                  <Font name="Gabriola" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="108.0" layoutY="228.0" prefHeight="22.0" prefWidth="88.0" text="Nama : ">
+               <font>
+                  <Font name="Gabriola" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="108.0" layoutY="276.0" prefHeight="22.0" prefWidth="88.0" text="Gaji : ">
+               <font>
+                  <Font name="Gabriola" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="108.0" layoutY="328.0" prefHeight="22.0" prefWidth="88.0" text="Jabatan : ">
+               <font>
+                  <Font name="Gabriola" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="108.0" layoutY="384.0" prefHeight="22.0" prefWidth="88.0" text="Status : ">
+               <font>
+                  <Font name="Gabriola" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="soutIdPegawai" layoutX="242.0" layoutY="187.0" text="ID">
+               <font>
+                  <Font name="Gabriola" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="soutNamaPegawai" layoutX="242.0" layoutY="231.0" text="Nama">
+               <font>
+                  <Font name="Gabriola" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="soutGaji" layoutX="242.0" layoutY="279.0" text="Gaji">
+               <font>
+                  <Font name="Gabriola" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="soutJabatan" layoutX="244.0" layoutY="331.0" text="Jabatan">
+               <font>
+                  <Font name="Gabriola" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="soutStatus" layoutX="243.0" layoutY="387.0" text="Status">
+               <font>
+                  <Font name="Gabriola" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
