@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.SubScene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="829.0" prefWidth="1098.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PembayaranPelangganController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="742.0" prefWidth="1062.0">
+         <children>
+            <ImageView fitHeight="941.0" fitWidth="1141.0" layoutX="-48.0" layoutY="-32.0" opacity="0.78" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/Hotel%20Buat%20Akun.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="userInfo" layoutX="925.0" layoutY="-2.0" mnemonicParsing="false" onAction="#gotoUserInfo" prefHeight="32.0" prefWidth="152.0" text="Your Account" />
+            <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="925.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/Login.png" />
+               </image>
+            </ImageView>
+            <SubScene height="72.0" layoutX="979.0" layoutY="741.0" opacity="0.45" width="107.0">
+               <root>
+                  <Region />
+               </root>
+               <effect>
+                  <BoxBlur />
+               </effect>
+            </SubScene>
+            <ImageView fitHeight="78.0" fitWidth="88.0" layoutX="989.0" layoutY="741.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/Hospitality%20Logo.png" />
+               </image>
+               <effect>
+                  <Bloom />
+               </effect>
+            </ImageView>
+            <Button fx:id="btnHome" layoutX="62.0" layoutY="130.0" mnemonicParsing="false" onAction="#gotoHome" prefHeight="48.0" prefWidth="174.0" style="-fx-background-color: #D3D3D3;" text="Home">
+               <opaqueInsets>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="60.0" />
+               </opaqueInsets>
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <ImageView fitHeight="37.0" fitWidth="39.0" layoutX="72.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/Home.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnFasilitas" layoutX="62.0" layoutY="302.0" mnemonicParsing="false" onAction="#gotoFasilitas" prefHeight="48.0" prefWidth="174.0" style="-fx-background-color: #D3D3D3;" text="Fasilitas Hotel" />
+            <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="71.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/Search.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnExit" layoutX="16.0" layoutY="760.0" mnemonicParsing="false" onAction="#gotoExit" prefHeight="34.0" prefWidth="139.0" style="-fx-background-color: #D3D3D3;" text="Logout" />
+            <ImageView fitHeight="22.0" fitWidth="23.0" layoutX="27.0" layoutY="766.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/exit.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnPembayaran" layoutX="62.0" layoutY="477.0" mnemonicParsing="false" onAction="#gotoPembayaran" prefHeight="48.0" prefWidth="174.0" style="-fx-background-color: #D3D3D3;" text="Pembayaran" />
+            <ImageView fitHeight="39.0" fitWidth="47.0" layoutX="62.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/Confirm.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="tblPembayaran" layoutX="310.0" layoutY="89.0" prefHeight="213.0" prefWidth="243.0" style="-fx-background-color: #D3D3D3;">
+              <columns>
+                <TableColumn fx:id="colNoPembayaran" prefWidth="111.0" style="-fx-background-color: #D3D3D3;" text="No Pembayaran" />
+                <TableColumn fx:id="colMetode" prefWidth="130.0" style="-fx-background-color: #D3D3D3;" text="Metode Pembayaran" />
+              </columns>
+            </TableView>
+            <SubScene height="213.0" layoutX="564.0" layoutY="78.0" opacity="0.74" width="361.0">
+              <root>
+                <Region />
+              </root>
+            </SubScene>
+            <ChoiceBox fx:id="choicePembayaran" layoutX="574.0" layoutY="118.0" prefWidth="150.0" style="-fx-background-color: #D3D3D3;" />
+            <Text layoutX="574.0" layoutY="100.0" stroke="#bf2828" strokeType="OUTSIDE" strokeWidth="0.0" text="Pilih Pembayaran : " wrappingWidth="165.13671875">
+               <font>
+                  <Font name="Gabriola" size="25.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnBayar" layoutX="773.0" layoutY="161.0" mnemonicParsing="false" onAction="#gotoBayar" style="-fx-background-color: #D3D3D3;" text="Bayar" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

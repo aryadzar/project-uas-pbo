@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.SubScene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="533.0" prefWidth="706.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="Controller.UbahDataKamarController">
+   <children>
+      <ImageView fitHeight="542.0" fitWidth="735.0" layoutX="-15.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Room.jpg" />
+         </image>
+      </ImageView>
+      <SubScene height="516.0" layoutX="26.0" layoutY="8.0" opacity="0.8" width="668.0">
+        <root>
+          <Region />
+        </root>
+      </SubScene>
+      <TextField fx:id="lblNoKamar" layoutX="168.0" layoutY="195.0" prefHeight="25.0" prefWidth="272.0" />
+      <Label layoutX="82.0" layoutY="199.0" text="No Kamar : " />
+      <ChoiceBox fx:id="choiceJenis" layoutX="168.0" layoutY="241.0" prefWidth="150.0" />
+      <Label layoutX="82.0" layoutY="245.0" text="Jenis Kamar : " />
+      <TextField fx:id="lblHarga" layoutX="168.0" layoutY="282.0" prefHeight="25.0" prefWidth="272.0" />
+      <Label layoutX="82.0" layoutY="286.0" text="Harga : " />
+      <Label layoutX="82.0" layoutY="329.0" text="Status Kamar : " />
+      <Button fx:id="btnUpdate" layoutX="168.0" layoutY="390.0" mnemonicParsing="false" onAction="#buttonAction" prefHeight="37.0" prefWidth="79.0" text="Update" />
+      <ChoiceBox fx:id="choiceStatus" layoutX="168.0" layoutY="325.0" prefWidth="150.0" />
+      <Button fx:id="btnDelete" layoutX="304.0" layoutY="390.0" mnemonicParsing="false" onAction="#buttonAction" prefHeight="37.0" prefWidth="72.0" text="Delete" />
+      <Button fx:id="btnInsert" layoutX="440.0" layoutY="390.0" mnemonicParsing="false" onAction="#buttonAction" prefHeight="37.0" prefWidth="72.0" text="Insert" />
+      <Button fx:id="btnKembali" layoutX="596.0" layoutY="482.0" mnemonicParsing="false" onAction="#gotoPegawaiHome" prefHeight="37.0" prefWidth="85.0" text="Kembali" />
+   </children>
+</AnchorPane>

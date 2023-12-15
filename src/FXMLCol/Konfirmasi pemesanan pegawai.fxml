@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.SubScene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+
+<AnchorPane id="AnchorPane" fx:id="Home" prefHeight="954.0" prefWidth="1268.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.KonfirmasiPemesananPegawaiController">
+   <children>
+      <SubScene height="72.0" layoutX="976.0" layoutY="859.0" opacity="0.45" width="107.0">
+         <root>
+            <Region />
+         </root>
+         <effect>
+            <BoxBlur />
+         </effect>
+      </SubScene>
+      <ImageView fitHeight="78.0" fitWidth="88.0" layoutX="986.0" layoutY="859.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Hospitality%20Logo.png" />
+         </image>
+         <effect>
+            <Bloom />
+         </effect>
+      </ImageView>
+      <Button fx:id="btnUserInfo" layoutX="1537.0" layoutY="7.0" mnemonicParsing="false" onAction="#gotoUserInfo" prefHeight="34.0" prefWidth="131.0" style="-fx-background-color: #D3D3D3;" text="Staff Info" />
+      <ImageView fitHeight="39.0" fitWidth="99.0" layoutX="1537.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Login.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnHome" layoutX="889.0" layoutY="16.0" mnemonicParsing="false" onAction="#gotoHome" prefHeight="48.0" prefWidth="174.0" style="-fx-background-color: #D3D3D3;" text="Home">
+         <opaqueInsets>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="60.0" />
+         </opaqueInsets>
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+      <ImageView fitHeight="37.0" fitWidth="39.0" layoutX="906.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Home.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnCheck" layoutX="675.0" layoutY="16.0" mnemonicParsing="false" onAction="#gotoRoom" prefHeight="48.0" prefWidth="174.0" style="-fx-background-color: #D3D3D3;" text="Room Check" />
+      <Button fx:id="btnConfirmation" layoutX="433.0" layoutY="17.0" mnemonicParsing="false" onAction="#gotoConfirm" prefHeight="48.0" prefWidth="174.0" style="-fx-background-color: #D3D3D3;" text="Confirmation" />
+      <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="684.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Search.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="51.0" layoutX="443.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Confirm.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnExit" layoutX="32.0" layoutY="878.0" mnemonicParsing="false" onAction="#gotoExit" prefHeight="34.0" prefWidth="139.0" style="-fx-background-color: #D3D3D3;" text="Logout" />
+      <ImageView fitHeight="22.0" fitWidth="23.0" layoutX="55.0" layoutY="884.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/exit.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="Reservasi" layoutX="23.0" layoutY="82.0" prefHeight="771.0" prefWidth="1051.0" style="-fx-background-color: #D3D3D3;">
+        <columns>
+            <TableColumn fx:id="clmNoReservasi" minWidth="9.0" prefWidth="101.0" text="Nomor Reservasi" />
+            <TableColumn fx:id="colNamaPelanggan" prefWidth="106.0" text="Nama Pelanggan" />
+            <TableColumn fx:id="colNomorKamar" prefWidth="108.0" text="Nomor Kamar" />
+            <TableColumn fx:id="colTanggalReservasi" prefWidth="119.0" text="Tanggal Reservasi" />
+            <TableColumn fx:id="colTanggalCheckIn" prefWidth="121.0" text="Tanggal Check In" />
+            <TableColumn fx:id="colTanggalCheckOut" prefWidth="119.0" text="Tanggal Check Out" />
+            <TableColumn fx:id="colJumlahTamu" prefWidth="100.0" text="Jumlah Tamu" />
+            <TableColumn fx:id="colLayananTambahan" prefWidth="123.0" text="Layanan Tambahan" />
+            <TableColumn fx:id="colStatusPemesanan" prefWidth="153.0" text="Status Pemesanan" />
+        </columns>
+      </TableView>
+      <SubScene height="145.0" layoutX="1084.0" layoutY="299.0" opacity="0.67" width="584.0">
+        <root>
+          <Region />
+        </root>
+      </SubScene>
+      <ChoiceBox fx:id="choiceNoReservasi" layoutX="1117.0" layoutY="346.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="choiceStatusPemesana" layoutX="1478.0" layoutY="346.0" prefWidth="150.0" />
+      <Label layoutX="1115.0" layoutY="320.0" text="Nomor Reservasi" />
+      <Label layoutX="1478.0" layoutY="320.0" text="Status Pemesanan" />
+      <Button fx:id="btnKonfirmasi" layoutX="1338.0" layoutY="399.0" mnemonicParsing="false" onAction="#voidUbahData" prefHeight="25.0" prefWidth="88.0" text="Konfirmasi" />
+   </children>
+</AnchorPane>

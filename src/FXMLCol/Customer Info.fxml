@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.SubScene?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="464.0" prefWidth="659.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="Controller.CustomerInfoController">
+   <children>
+      <ImageView fitHeight="503.0" fitWidth="685.0" layoutY="-39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Hotel%20Buat%20Akun.jpg" />
+         </image>
+      </ImageView>
+      <SubScene height="405.0" layoutX="37.0" layoutY="32.0" opacity="0.8" width="605.0">
+        <root>
+          <Region />
+        </root>
+      </SubScene>
+      <Label layoutX="81.0" layoutY="113.0" prefHeight="34.0" prefWidth="143.0" text="ID Pelanggan :">
+         <font>
+            <Font name="Gabriola" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="167.0" prefHeight="34.0" prefWidth="133.0" text="Nomor KTP  :">
+         <font>
+            <Font name="Gabriola" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="218.0" prefHeight="22.0" prefWidth="88.0" text="Nama :">
+         <font>
+            <Font name="Gabriola" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="272.0" prefHeight="34.0" prefWidth="126.0" text="No Telepon :">
+         <font>
+            <Font name="Gabriola" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="323.0" prefHeight="22.0" prefWidth="88.0" text="Alamat :">
+         <font>
+            <Font name="Gabriola" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="39.0" fitWidth="99.0" layoutX="603.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Login.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblIdPelanggan" layoutX="233.0" layoutY="113.0" prefHeight="34.0" prefWidth="143.0" text="ID Pelanggan ">
+         <font>
+            <Font name="Gabriola" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNoKtp" layoutX="233.0" layoutY="167.0" prefHeight="34.0" prefWidth="143.0" text="No Ktp">
+         <font>
+            <Font name="Gabriola" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNama" layoutX="233.0" layoutY="218.0" prefHeight="34.0" prefWidth="143.0" text="Nama">
+         <font>
+            <Font name="Gabriola" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTelepon" layoutX="233.0" layoutY="272.0" prefHeight="34.0" prefWidth="143.0" text="Telepon">
+         <font>
+            <Font name="Gabriola" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAlamat" layoutX="233.0" layoutY="323.0" prefHeight="34.0" prefWidth="143.0" text="Alamat">
+         <font>
+            <Font name="Gabriola" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
